@@ -34,7 +34,7 @@ function caesarCipher(string, shift) {
     let alphabetIndex = alphabet.indexOf(element.toUpperCase());
     if (!alphabet.includes(element.toUpperCase())) {
       newArray.push(element);
-    } else if (alphabetIndex + shift > 23 && alphabetIndex != -1) {
+    } else if (alphabetIndex + shift > 23) {
       let extra = alphabetIndex + shift - 23;
       element === element.toUpperCase()
         ? newArray.push(alphabet[extra - 3])
