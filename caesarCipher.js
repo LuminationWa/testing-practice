@@ -8,7 +8,7 @@ function caesarCipher(string, shift) {
       if (alphabetIndex + shift > 23) {
         let extra = (alphabetIndex + shift) - 23;
         element === element.toUpperCase() ? newArray.push(alphabet[extra - 3])  : newArray.push(alphabet[extra - 3].toLowerCase());  
-      } else element === element.toUpperCase() ? newArray.push(alphabet[alphabetIndex + shift]) : newArray.push(alphabet[alphabetIndex + shift].toLocaleLowerCase()) ;      
+      } else element === element.toUpperCase() ? newArray.push(alphabet[alphabetIndex + shift]) : newArray.push(alphabet[alphabetIndex + shift].toLowerCase()) ;      
   });
   return newArray.join('');
 }
